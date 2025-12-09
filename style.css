@@ -1,0 +1,197 @@
+/* تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* خلفية وردية فاتحة */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+/* شاشة القفل */
+.lock-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f48fb1; /* لون وردي داكن للشاشة */
+}
+.lock-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+}
+.lock-card h1 {
+    color: #e91e63; /* وردي عميق */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#password-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #d81b60;
+}
+
+/* تنسيق المحتوى الرئيسي والبطاقات */
+#main-content {
+    padding: 20px;
+}
+.welcome-card, .memory-card, .final-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+}
+.welcome-card p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+.section-title {
+    font-size: 1.5em;
+    color: #e91e63;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.video-card video, .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.final-card p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e91e63;
+   
+    
+    
+}
+/* تنسيق البطاقة الجديدة الشبيهة بالتيك توك */
+.new-card {
+    background-color: #fff; /* خلفية بيضاء */
+    padding: 30px 20px;
+    border-radius: 40px; /* حواف دائرية أكبر */
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4); /* ظل وردي بارز */
+    border: 5px solid #f8bbd0; /* إطار وردي فاتح */
+    max-width: 380px; /* حجم البطاقة المشابه للهاتف */
+    margin-top: 50px;
+}
+.card-title-new {
+    color: #8e24aa; /* لون بنفسجي أو وردي داكن */
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+/* تنسيق مشغل الموسيقى */
+.music-player {
+    display: flex;
+    align-items: center;
+    background-color: #e1bee7; /* خلفية بنفسجية فاتحة للمشغل */
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.album-art img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.song-info {
+    flex-grow: 1;
+    text-align: right;
+}
+.song-title {
+    font-weight: bold;
+    color: #4a148c; /* بنفسجي غامق */
+    margin: 0;
+    font-size: 1.1em;
+}
+.artist-name {
+    color: #880e4f; /* وردي غامق */
+    margin: 0;
+    font-size: 0.9em;
+}
+.playback-controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute; /* لجعل شريط التقدم يظهر تحت الأغنية */
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+}
+.progress-bar {
+    height: 5px;
+    background-color: #ce93d8;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+.progress-filled {
+    height: 100%;
+    background-color: #8e24aa;
+    border-radius: 5px;
+}
+.time {
+    font-size: 0.8em;
+    color: #4a148c;
+}
+/* تنسيق الصورة الرئيسية والتاريخ */
+.main-photo img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* تأثير البكسل المزدوج (اختياري) */
+    outline: 5px solid #fff; 
+    outline-offset: -5px;
+}
+.since-text {
+    font-size: 1.1em;
+    color: #7b1fa2;
+    margin: 15px 0 10px;
+    font-weight: 500;
+}
+.date-box {
+    background-color: #ff69b4; /* لون وردي ساخن */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block; /* ليكون بحجم النص فقط */
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+}
+.next-button {
+    background-color: #8e24aa; /* لون بنفسجي للمتابعة */
+}
+.next-button:hover {
+    background-color: #7b1fa2;
+}
